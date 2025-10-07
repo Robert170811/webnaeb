@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: #0f172a;
+    background-image: url(pubg-battlegrounds-19vwb.jpg);
+
+    background-position: center;
+    background-size: auto;
     color: white;
     display: flex;
     justify-content: center;
