@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Список файлов</title>
+</head>
+<body>
+  <h1>Доступные файлы</h1>
+  {% if files %}
+    <ul>
+      {% for f in files %}
+        <li><a href="{{ url_for('download_file', filename=f) }}">{{ f }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Файлы не найдены.</p>
+  {% endif %}
+
+  <p><a href="{{ url_for('index') }}">← Назад</a></p>
+</body>
+</html>

