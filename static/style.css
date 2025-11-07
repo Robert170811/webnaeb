@@ -1,0 +1,88 @@
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url("../static/pubg-battlegrounds-19vwb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Контейнер для центрирования формы и текста */
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+/* Заголовки */
+h1, h2 {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.4em;
+}
+
+/* Поля ввода */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Кнопка */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0a500;
+    color: white;
+    font-weight: bold;
+}
+
+/* Кнопка при нажатии */
+button:active {
+    background-color: #d48806;
+}
+
+/* Текст и ссылки */
+p, a {
+    color: white;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+/* Чтобы всё выглядело идеально на телефоне */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    input, button {
+        font-size: 1em;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
